@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&family=Tilt+Prism&display=swap");
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.react-multi-carousel-item:hover {
+	z-index: 5 !important;
+}
+.ban {
+	background-image: linear-gradient(
+		180deg,
+		hsla(0, 0%, 8%, 0) 0,
+		hsla(0, 0%, 8%, 0.15) 15%,
+		hsla(0, 0%, 8%, 0.35) 29%,
+		hsla(0, 0%, 8%, 0.58) 44%,
+		#141414 68%,
+		#141414
+	);
+	background-position: 0 top;
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	height: 7.4rem;
+}
+
+@media screen and (max-width: 850px) {
+	.hov:hover {
+		background-color: rgba(37, 37, 37, 0.61);
+	}
+}
+
+.kov:hover {
+	text-decoration-line: underline;
+}
+
+.transf {
+	transition: width 0.97s ease-in-out;
+	width: 0;
+	padding: 8px;
+	padding-left: 30px;
+	top: -4px;
+}
+.active:focus {
+	width: 250px;
+	right: 0px;
+}
+
+.ser {
+	animation: move 1.1s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes move {
+	from {
+		right: 0px;
+	}
+	to {
+		right: 216px;
+	}
+}
